@@ -10,5 +10,31 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-  
+
+  const float dollarsPerHour = 16.00;
+
+  int hoursPerWeek = 0;
+  cout << "input hours worked per week: ";
+  cin >> hoursPerWeek;
+
+  float medicalInsurance = 10.00;
+  float socialSecurityTax = .06;
+  float federalIncomeTax = .14;
+  float stateIncomeTax = .05;
+
+  float grossPay = dollarsPerHour*hoursPerWeek;
+  float socialSecurityWithheld = socialSecurityTax*grossPay;
+  float federalIncomeWithheld = federalIncomeTax*grossPay;
+  float stateIncomeWithheld = stateIncomeTax*grossPay;
+
+  float netTakeHome = grossPay - (socialSecurityWithheld + federalIncomeWithheld + stateIncomeWithheld);
+
+  cout << "gross pay: " << grossPay << " dollars" << endl;
+  cout << socialSecurityWithheld << " is the amount withheld for social security tax" << endl;
+  cout << federalIncomeWithheld << " is the amount withheld for federal income tax" << endl;
+  cout << stateIncomeWithheld << " is the amount withheld for federal income tax" << endl;
+  cout << medicalInsurance << " is the amount withheld for medical insurance" << endl;
+
+  cout << "the net take-home pay for the week is " << netTakeHome << endl;
+
 }
