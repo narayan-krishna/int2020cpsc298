@@ -37,4 +37,5 @@ int main(int argc, char **argv)
 
   cout << "the net take-home pay for the week is " << netTakeHome << endl;
 
+  return 0;
 }

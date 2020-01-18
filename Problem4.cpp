@@ -33,4 +33,6 @@ main(int argc, char **argv)
   }
 
   cout << "the cost of the item after given years is " << itemCost << endl;
+
+  return 0;
 }

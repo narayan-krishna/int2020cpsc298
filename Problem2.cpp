@@ -33,4 +33,6 @@ int main(int argc, char **argv)
     cout << meetingAttendance - maximumRoomCapacity;
     cout << " people must be excluded in order to meet fire regulations." << endl;
   }
+
+  return 0;
 }
