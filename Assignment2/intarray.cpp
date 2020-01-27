@@ -27,4 +27,6 @@ int main(int argc, char **argv)
   cout << numbers[7] << ", ";
   cout << numbers[8] << ", ";
   cout << numbers[9] << endl;
+
+  return 0;
 }

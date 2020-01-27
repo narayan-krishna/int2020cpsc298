@@ -24,4 +24,6 @@ int main(int argc, char **argv)
   costWithTax = addTax(taxRateFraction, itemCost);
 
   cout << costWithTax << endl;
+
+  return 0;
 }
