@@ -12,8 +12,7 @@ int main(int argc, char **argv)
   int inputNumber = 0;
   for(int i = 0; i < 10; ++i)
   {
-    cout << "enter a number: ";
-    cin >> inputNumber;
+    cout << "enter a number: "; cin >> inputNumber;
     numbers[i] = inputNumber;
   }
 

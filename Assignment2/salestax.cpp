@@ -13,11 +13,9 @@ int main(int argc, char **argv)
   float taxRatePercentage = 0;
   float costWithTax = 0;
 
-  cout << "enter cost of item: ";
-  cin >> itemCost;
+  cout << "enter cost of item: "; cin >> itemCost;
 
-  cout << "enter tax rate as a percentage: ";
-  cin >> taxRatePercentage;
+  cout << "enter tax rate as a percentage: "; cin >> taxRatePercentage;
 
   float taxRateFraction = taxRatePercentage/100;
 

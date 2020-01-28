@@ -17,22 +17,29 @@ float feetToMeters(float feet){
   return toMeters;
 }
 
+void metersToMetersCentimeters(float meters, int array[]){
+  int metersWhole = meters;
+  int centimetersWhole = (meters - metersWhole)*100;
+  array[0] = metersWhole;
+  array[1] = centimetersWhole;
+}
 
 float input(){
   int feet = 0;
   int inches = 0;
 
-  cout << "feet: ";
-  cin >> feet;
+  cout << "feet: "; cin >> feet;
 
-  cout << "inches: ";
-  cin >> inches;
+  cout << "inches: "; cin >> inches;
 
   float inFeet = feet + inchesToFeet(inches);
   return inFeet;
 }
 
 int main(int argc, char **argv){
-  cout << feetToMeters(input()) << endl;
+  int metersCentimeters[2];
+  metersToMetersCentimeters(feetToMeters(input()), metersCentimeters);
+  cout << metersCentimeters[0] << " meters, ";
+  cout << metersCentimeters[1] << " centimeters. " << endl;
   return 0;
 }
