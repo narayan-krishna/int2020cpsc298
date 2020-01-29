@@ -16,16 +16,12 @@ int main(int argc, char **argv)
     numbers[i] = inputNumber;
   }
 
-  cout << numbers[0] << ", ";
-  cout << numbers[1] << ", ";
-  cout << numbers[2] << ", ";
-  cout << numbers[3] << ", ";
-  cout << numbers[4] << ", ";
-  cout << numbers[5] << ", ";
-  cout << numbers[6] << ", ";
-  cout << numbers[7] << ", ";
-  cout << numbers[8] << ", ";
-  cout << numbers[9] << endl;
+  for(int i = 0; i < 10; ++i)
+  {
+    cout << numbers[i] << " ";
+  }
+
+  cout << endl;
 
   return 0;
 }
