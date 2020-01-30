@@ -12,7 +12,7 @@ Pet::Pet(){
   weight = -1;
 }
 
-//non-default constructor
+//overloaded constructor
 Pet::Pet(string petName, int petAge, string petType, double petWeight){
   name = petName;
   age = petAge;
